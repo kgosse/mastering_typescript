@@ -1,0 +1,43 @@
+﻿// Adapted from: http://purecss.io/layouts/side-menu/
+@import "variables.less";
+
+#layout {
+    position: relative;
+    padding-left: @sidebar-width;
+    left: 0;
+
+    .content {
+        padding: 2em 2em;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+
+        h2:first-child, p:first-child {
+            margin-top: 0;
+        }
+
+        .inline-elements {
+            > button, > span, > select, > div {
+                display: inline-block;
+                margin-right: 0.5em !important;
+
+                &:last-child {
+                    margin-right: 0 !important;
+                }
+            }
+        }
+    }
+
+    .header {
+        margin: 0;
+        color: @header-color;
+        text-align: left;
+        padding: 2.5em 2em 0;
+        border-bottom: 1px solid @header-border-color;
+        
+        h1 {
+            margin: 0.2em 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+    }
+}

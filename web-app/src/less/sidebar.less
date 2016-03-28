@@ -1,0 +1,67 @@
+// Adapted from: http://purecss.io/layouts/side-menu/
+@import "variables.less";
+
+#sidebar {
+    margin-left: -@sidebar-width;
+    width: @sidebar-width;
+    position: fixed;
+    top: 0;
+    left: @sidebar-width;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: @sidebar-color-back;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+    a {
+        color: @sidebar-link-color;
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+    }
+
+    /*
+    Remove all background/borders, since we are applying them to #sidebar.
+    */
+    .pure-menu,
+    .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    .pure-menu ul,
+    .pure-menu .menu-item-divided {
+        border-top: 1px solid @sidebar-divider-color;
+    }
+
+    /*
+    Change color of the anchor links on hover/focus.
+    */
+    .pure-menu li:not(.pure-menu-selected) a:hover,
+    .pure-menu li:not(.pure-menu-selected) a:focus {
+        background: @sidebar-divider-color;
+    }
+
+    /*
+    This styles the selected menu item 
+    */
+    .pure-menu-selected a {
+        background: @sidebar-selected-color-back;
+        color: @sidebar-selected-color-fore;
+    }
+
+    /*
+    This styles the menu heading.
+    */
+    .pure-menu-heading {
+        background: @sidebar-header-color-back;
+        color: @sidebar-header-color-fore;
+        font-size: 110%;
+        margin: 0;
+    }
+}

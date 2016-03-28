@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+server-app/node_modules
+web-app/node_modules
+web-app/bower_components
+server-app/dist/
+web-app/dist

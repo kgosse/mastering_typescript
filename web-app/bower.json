@@ -1,0 +1,27 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "Web application for managing Slice-it Pizza.",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "pizza",
+    "administration"
+  ],
+  "authors": [
+    "David Sherret"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "~0.6.0",
+    "react": "~0.13.3"
+  }
+}
